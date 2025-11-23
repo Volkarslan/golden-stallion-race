@@ -1,0 +1,9 @@
+@layer components {
+  .panel {
+    @apply bg-hipodrome-panel rounded-xl shadow-sm p-4;
+  }
+
+  .control-panel {
+    @apply flex gap-3 flex-wrap justify-end;
+  }
+}

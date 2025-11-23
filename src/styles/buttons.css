@@ -1,0 +1,25 @@
+@layer components {
+  .btn-primary {
+    @apply rounded-md px-3 py-2 text-sm font-medium text-white shadow-sm transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary--reset {
+    @apply bg-control-reset hover:bg-control-reset/90;
+  }
+
+  .btn-primary--start {
+    @apply bg-control-start hover:bg-control-start/90;
+  }
+
+  .btn-icon {
+    @apply flex h-8 w-8 items-center justify-center rounded-full text-base transition-colors disabled:cursor-not-allowed disabled:opacity-40;
+  }
+
+  .btn-icon--reset {
+    @apply bg-control-reset/10 text-control-reset hover:bg-control-reset/20;
+  }
+
+  .btn-icon--start {
+    @apply bg-control-start/10 text-control-start hover:bg-control-start/20;
+  }
+}

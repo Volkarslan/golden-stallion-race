@@ -1,22 +1,23 @@
 <script>
-import AppHeader from "./components/layout/AppHeader.vue";
-import GameView from "./display/GameView.vue";
+import AppHeader from './components/layout/AppHeader.vue';
+import GameView from './display/GameView.vue';
 
 export default {
+  name: 'AppRoot',
   components: {
     AppHeader,
-    GameView,
-  },
+    GameView
+  }
 };
 </script>
 
 <template>
-  <div class="min-h-screen bg-hipodrome-base text-text-body">
-    <div class="max-w-6xl mx-auto px-4 py-4 lg:py-6">
+  <div class="app-shell">
+    <div class="app-container">
       <AppHeader class="mb-4 lg:mb-6" />
-      <GameView />
+      <main class="flex-1">
+        <GameView />
+      </main>
     </div>
   </div>
 </template>
-
-

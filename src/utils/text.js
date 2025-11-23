@@ -1,15 +1,20 @@
-import en from "../locales/en.json";
+import locale from '@/locales/en.json'
 
-export function t(path, params = {}) {
-  const keys = path.split(".");
-  let value = en;
-  for (const k of keys) {
-    value = value?.[k];
-  }
-  if (typeof value !== "string") return path;
+/**
+ * Retrieves a value from en.json using dot-notation path.
+ * This helper is intentionally simple and framework-agnostic.
+ *
+ * Example:
+ * getText('header.title')
+ * -> "Golden Stallion Race"
+ *
+ * @param {string} path - Dot-notated key path (e.g. "header.buttons.start")
+ * @returns {string | null} Value if found, otherwise null
+ */
+export function getText(path) {
+  if (!path) return null
 
-  return Object.keys(params).reduce(
-    (acc, key) => acc.replace(`{{${key}}}`, params[key]),
-    value
-  );
+  return path
+    .split('.')
+    .reduce((acc, key) => acc?.[key], locale) ?? null
 }

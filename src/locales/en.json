@@ -1,24 +1,56 @@
 {
   "app": {
     "title": "Golden Stallion",
-    "subtitle": "Race Day Simulation"
+    "subtitle": "Horce Race Simulation"
   },
-  "controls": {
-    "generateProgram": "Generate Program",
-    "startRound": "Start Round",
-    "currentRound": "Round {{round}} / {{total}}"
+  "header": {
+    "title": "Golden Stallion Race",
+    "subtitle": "Race Day Simulation",
+    "buttons": {
+      "generate": "Generate Program",
+      "start": "Start Round",
+      "generateAria": "Generate race program",
+      "startAria": "Start current round"
+    }
   },
-  "panels": {
-    "horseList": "Horse List",
-    "racingGroup": "Racing Today",
-    "restingGroup": "Not Racing",
-    "raceTrack": "Race Track",
-    "results": "Results"
+  "controlPanel": {
+    "buttons": {
+      "generate": "Generate Program",
+      "start": "Start Round"
+    }
   },
-  "race": {
-    "roundRunning": "Round {{round}} is in progress...",
-    "roundCompleted": "Round {{round}} completed.",
-    "raceCompleted": "Race day completed",
-    "totalRounds": "Total Rounds: {{count}}"
+  "horseList": {
+    "title": "Horse List",
+    "racingTitle": "Racing This Round",
+    "restingTitle": "Other Horses",
+    "noProgram": "Generate a program to see today’s list.",
+    "noRacing": "No horses are selected to race yet.",
+    "allRacing": "All horses are racing today.",
+    "condition": "Cond"
+  },
+  "results": {
+    "title": "Results",
+    "noResults": "No results yet. Start a round to see placements.",
+    "expandHint": "Tap to see full results",
+    "roundLabel": "Round"
+  },
+  "raceTrack": {
+    "title": "Race Track",
+    "roundLabel": "Round",
+    "totalRoundsLabel": "Total Rounds",
+    "status": {
+      "noProgram": "Generate a program to start the race day.",
+      "runningPrefix": "Round",
+      "runningSuffix": "is in progress...",
+      "finished": "Race day completed. You can generate a new program.",
+      "readyPrefix": "Round",
+      "readySuffix": "is ready to start."
+    },
+    "overlay": {
+      "title": "Race Completed",
+      "description": "All 6 rounds are finished. Generate a new program to start a fresh race day.",
+      "close": "Close",
+      "newRace": "New Race"
+    }
   }
 }

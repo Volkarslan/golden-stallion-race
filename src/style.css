@@ -1,8 +1,11 @@
+@import './styles/app.css';
+@import './styles/track.css';
+@import './styles/buttons.css';
+@import './styles/panels.css';
+@import './styles/cards.css';
+@import './styles/list.css';
+@import './styles/header.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Global body rengi ve temel arka plan */
-body {
-  @apply bg-hipodrome-base text-text-body antialiased;
-}

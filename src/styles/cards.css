@@ -1,0 +1,61 @@
+@layer components {
+  .results-wrapper {
+    @apply w-full;
+  }
+
+  .results-title {
+    @apply mb-2 text-base font-semibold text-text-title;
+  }
+
+  .results-empty {
+    @apply text-xs text-text-muted;
+  }
+
+  .results-card {
+    @apply mb-3 last:mb-0 cursor-pointer rounded-lg border border-control-start/60 bg-hipodrome-panel transition-all duration-200 hover:shadow-md;
+  }
+
+  .results-card__header {
+    @apply flex items-center justify-between px-2 py-1.5;
+  }
+
+  .results-card__title {
+    @apply text-xs font-semibold text-text-title;
+  }
+
+  .results-card__chevron {
+    @apply text-xs text-text-muted;
+  }
+
+  .results-card__divider {
+    @apply border-t border-control-start/60;
+  }
+
+  .results-card__body {
+    @apply px-2 py-1.5;
+  }
+
+  .results-list {
+    @apply text-xs;
+  }
+
+  .results-list__item {
+    @apply flex items-center justify-between py-0.5;
+  }
+
+  .results-list__info {
+    @apply flex items-center gap-1;
+  }
+
+  .results-list__medal {
+    @apply flex w-4 justify-center;
+  }
+
+  .results-list__time {
+    @apply text-text-muted;
+  }
+
+  .results-list__hint {
+    @apply pt-1 text-[10px] italic text-text-muted;
+  }
+}

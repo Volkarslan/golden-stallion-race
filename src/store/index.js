@@ -1,10 +1,9 @@
-import { createStore } from "vuex";
-import race from "./race";
+// @/store/index.js
+import { createStore } from 'vuex'
+import race from '@/core/race'
 
-const store = createStore({
+export default createStore({
   modules: {
-    race,
-  },
-});
-
-export default store;
+    race
+  }
+})

@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint \"src/**/*.{js,vue}\"",
+    "lint:fix": "eslint \"src/**/*.{js,vue}\" --fix",
+    "format": "prettier --write \"src/**/*.{js,vue,css,html,json}\""
   },
   "dependencies": {
     "vue": "^3.5.24",
@@ -20,8 +23,14 @@
     "@vue/test-utils": "^2.4.0-alpha.2",
     "autoprefixer": "^10.4.22",
     "babel-jest": "^26.6.3",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsdoc": "^61.4.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-vue": "^10.6.0",
     "jest": "^26.6.3",
     "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
     "tailwindcss": "^3.4.18",
     "vite": "^7.2.4",
     "vue-jest": "^5.0.0-alpha.10"

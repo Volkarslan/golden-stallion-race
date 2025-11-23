@@ -1,0 +1,37 @@
+@layer components {
+  body {
+    @apply bg-hipodrome-base text-text-body antialiased;
+  }
+
+  .app-shell {
+    @apply min-h-screen bg-hipodrome-base text-text-body antialiased;
+  }
+
+  .app-container {
+    @apply mx-auto flex min-h-screen max-w-7xl flex-col p-4;
+  }
+
+  .app__overlay {
+    @apply fade-in fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm;
+  }
+
+  .app__overlay-card {
+    @apply max-w-xs rounded-2xl bg-hipodrome-panel px-6 py-5 text-center shadow-xl;
+  }
+
+  .app__overlay-icon {
+    @apply mb-2 text-3xl;
+  }
+
+  .app__overlay-title {
+    @apply mb-1 text-lg font-semibold text-text-title;
+  }
+
+  .app__overlay-text {
+    @apply mb-3 text-xs text-text-muted;
+  }
+
+  .app__overlay-actions {
+    @apply flex justify-center gap-4;
+  }
+}
