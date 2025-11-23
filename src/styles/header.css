@@ -18,7 +18,7 @@
   }
 
   .app-header__title {
-    @apply text-lg font-semibold text-text-title;
+    @apply text-base lg:text-lg font-semibold text-text-title;
   }
 
   .app-header__subtitle {

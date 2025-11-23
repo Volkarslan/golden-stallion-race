@@ -127,10 +127,10 @@ export default {
               class="results-list__item"
             >
               <div class="results-list__info">
-                <span class="results-list__medal">
+                <span v-if="index < 3" class="results-list__medal">
                   {{ medal(index) }}
                 </span>
-                <span>{{ index + 1 }}.</span>
+                <span v-if="index >= 3" class="pl-1">{{ index + 1 }}.</span>
                 <span>{{ p.horse.name }}</span>
               </div>
               <span class="results-list__time">
@@ -147,10 +147,10 @@ export default {
               class="results-list__item"
             >
               <div class="results-list__info">
-                <span class="results-list__medal">
+                <span v-if="index < 3" class="results-list__medal">
                   {{ medal(index) }}
                 </span>
-                <span>{{ index + 1 }}.</span>
+                <span v-if="index >= 3" class="pl-1">{{ index + 1 }}.</span>
                 <span>{{ p.horse.name }}</span>
               </div>
               <span class="results-list__time">
