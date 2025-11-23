@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ortak kart/panel stili */
+.panel {
+  @apply bg-hipodrome-panel rounded-xl shadow-sm;
+}
+
+.card {
+  @apply bg-hipodrome-panel rounded-lg shadow-sm;
+}

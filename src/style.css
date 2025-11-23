@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body rengi ve temel arka plan */
+body {
+  @apply bg-hipodrome-base text-text-body antialiased;
+}

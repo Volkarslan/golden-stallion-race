@@ -1,0 +1,24 @@
+{
+  "app": {
+    "title": "Golden Stallion",
+    "subtitle": "Race Day Simulation"
+  },
+  "controls": {
+    "generateProgram": "Generate Program",
+    "startRound": "Start Round",
+    "currentRound": "Round {{round}} / {{total}}"
+  },
+  "panels": {
+    "horseList": "Horse List",
+    "racingGroup": "Racing Today",
+    "restingGroup": "Not Racing",
+    "raceTrack": "Race Track",
+    "results": "Results"
+  },
+  "race": {
+    "roundRunning": "Round {{round}} is in progress...",
+    "roundCompleted": "Round {{round}} completed.",
+    "raceCompleted": "Race day completed",
+    "totalRounds": "Total Rounds: {{count}}"
+  }
+}
