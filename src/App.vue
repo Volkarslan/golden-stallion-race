@@ -1,6 +1,6 @@
 <script>
 import AppHeader from './components/layout/AppHeader.vue';
-import GameView from './display/GameView.vue';
+import GameView from './Display/GameView.vue';
 
 export default {
   name: 'AppRoot',

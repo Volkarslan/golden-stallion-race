@@ -1,7 +1,7 @@
 # 🏇 Golden Stallion Race
 
-> A deterministic, simulation‑focused horse racing game built as a front‑end case study using Vue 3, Vuex and Tailwind CSS.
->
+A deterministic, simulation‑focused horse racing game built as a front‑end case study using Vue 3, Vuex and Tailwind CSS.
+
 > *Six rounds. Dynamic physics. Fixed-seed randomness. Zero backend. Just pure racing logic.*
 
 ---
@@ -195,4 +195,61 @@ Feel free to fork, adapt or extend.
 
 ---
 
+## 🧪 Future Improvements (Geliştirilebilir Alanlar)
+
+This project was intentionally scoped as a focused case study, but it has plenty of room to grow into a richer racing experience.
+
+### 🔊 Audio & Atmosphere
+- **Sound effects** for start bell, gallop, crowd reactions and photo-finish moments  
+- Optional **sound packs** (arcade, realistic, retro)  
+- Global **mute / volume** controls
+
+### 🌗 Visual Modes & Theming
+- **Day / Night mode** with different track lighting and ambience  
+- Additional **track skins** (wet turf, dirt, championship day, festival theme)  
+- Subtle **weather cues** (light rain, fog, sunny glare) that only affect visuals, not logic
+
+### 🐎 Horse Variations & Favorites
+- **Distinct horse appearances** (colors, patterns, icon variants) linked to each horse  
+- Cosmetic **rarity tiers** (common / rare / legendary) for visual flair  
+- **Favorite horse selection**:
+  - Mark horses as favorites
+  - Quick filtering / highlighting on the list and track
+  - Simple per-favorite stats (wins, podiums, average time)
+
+### 📺 Screens, Story Mode & UX Depth
+- Additional **screens** beyond the core race view:
+  - Race day summary dashboard
+  - Horse detail panel with history and stats
+  - “Hall of Fame” for memorable runs
+- **Story mode**:
+  - A light narrative layer where the user follows a season, trainer career or a stable
+  - Progressive difficulty and scripted “event days”
+- Story-aware enhancements:
+  - **Visual improvements** (special overlays, story-specific track themes, NPC cards)
+  - **Textual improvements** (commentary-style messages, narrative tooltips, pre/post-race summaries)
+
+### 🌍 Localization & Languages
+- Extend the existing `locales/en.json` structure to support:
+  - **Multiple languages** (e.g. English, Turkish, etc.)
+  - Locale-aware number and date formatting
+- A small **language switcher** in the header
+
+### 📊 Rankings, Stats & Leaderboards
+- **Round-level ranking tables** with sortable columns (time, position, condition)  
+- **Race day summary table** for all 6 rounds  
+- Aggregated stats:
+  - Best times per distance
+  - Most consistent horses
+  - Win / podium percentages
+
+### 🧪 Engineering & Architecture Enhancements
+- More **unit tests** for:
+  - Speed curves and animation timing
+  - Edge cases in the race engine
+- Optional **component tests** (e.g. RaceTrack, RaceResult) with Vue Test Utils  
+- Extract race animation logic into a dedicated composable (e.g. `useRaceAnimation`)  
+- **PWA support** (installable app, offline-friendly basics)
+
+--- 
 🏁 *Let the stallions run wild.*
