@@ -139,7 +139,8 @@ export default {
      * @param {{ distance:number, placements:Array<{horse:{id:number,name:string,color:string},time:number}> }} anim
      */
     prepareAnimation(anim) {
-      const roundDurationSec = (anim.distance / 100) * 0.1
+      //   const roundDurationSec = (anim.distance / 100) * 0.1 FAST VERSION
+      const roundDurationSec = (anim.distance / 100)
 
       const timeById = new Map(anim.placements.map((p) => [p.horse.id, p.time]))
       const allTimes = Array.from(timeById.values())
@@ -280,10 +281,7 @@ export default {
         </span>
       </div>
 
-      <div
-        v-if="totalRounds > 0"
-        class="race-track__total"
-      >
+      <div v-if="totalRounds > 0" class="race-track__total">
         {{ text.totalRoundsLabel }}: {{ totalRounds }}
       </div>
     </header>
@@ -293,23 +291,12 @@ export default {
     </p>
 
     <div class="race-track__lanes">
-      <div
-        v-for="lane in lanes"
-        :key="lane.id"
-        class="race-track__lane"
-      >
+      <div v-for="lane in lanes" :key="lane.id" class="race-track__lane">
         <div class="race-track__inner">
           <div class="race-track__start"></div>
 
-          <div
-            class="race-track__horse-wrapper"
-            :style="horseStyle(lane)"
-          >
-            <div
-              class="race-track__horse"
-              :class="horseClasses(lane)"
-              :style="{ backgroundColor: lane.color }"
-            >
+          <div class="race-track__horse-wrapper" :style="horseStyle(lane)">
+            <div class="race-track__horse" :class="horseClasses(lane)" :style="{ backgroundColor: lane.color }">
               🏇🏼
             </div>
           </div>

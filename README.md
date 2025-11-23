@@ -29,7 +29,6 @@ This is not just a visual race — it is a carefully orchestrated simulation whe
 * ✅ Responsive layout (desktop & mobile)
 * ✅ Vuex-based state management
 * ✅ Tailwind-powered design system
-* ✅ Lightweight Jest test suite for core logic
 
 ---
 
@@ -103,27 +102,6 @@ npm run dev
 ```bash
 npm run build
 ```
-
----
-
-## ✅ Running Tests
-
-Core logic is covered by Jest tests located under `src/__tests__`.
-
-```bash
-npm test
-```
-
-Watch mode:
-
-```bash
-npm run test:watch
-```
-
-Test coverage includes:
-
-* `raceEngine` deterministic logic
-* Vuex store flow validation
 
 ---
 
