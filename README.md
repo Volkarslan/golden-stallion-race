@@ -147,24 +147,6 @@ And deploy the `dist/` folder.
 
 ---
 
-## 🧪 Future Improvements
-
-* 🎥 Replay mode per round
-* 📊 Advanced leaderboard stats
-* 🧠 Difficulty scaling
-* 🌍 Multi-language support
-* 👤 AI spectators reactions
-
----
-
-## 🙌 Created As
-
-Front-End Case Study Project
-
-Designed and developed with a focus on clean architecture, simulation logic and UX clarity.
-
----
-
 ## 📜 License
 
 This project is open for educational and showcase purposes.
@@ -173,7 +155,7 @@ Feel free to fork, adapt or extend.
 
 ---
 
-## 🧪 Future Improvements (Geliştirilebilir Alanlar)
+## 🧪 Future Improvements 
 
 This project was intentionally scoped as a focused case study, but it has plenty of room to grow into a richer racing experience.
 
